@@ -109,17 +109,17 @@ temp_total_min = 0
 #average maximum temperature
 for i_one in range(len(max_temps)):
     temp_total_max += max_temps[i_one]
-print(f"The average maximum temperature was {temp_total_max/len(max_temps)}")
+print(f"The average maximum temperature was {temp_total_max/len(max_temps):.2f}") #the :.2f rounds the temp to two decimal places
 
 #average minimum tempurature
 for i_two in range(len(min_temps)):
     temp_total_min += min_temps[i_two]
-print(f"The average minimum temperature was {temp_total_min/len(min_temps)}")
+print(f"The average minimum temperature was {temp_total_min/len(min_temps):.2f}")
 
 #highest recorded temperature
 highest_temp = max_temps.index(max(max_temps))
-print(f"The highest recorded temperature was {max_temps[highest_temp]}")
+print(f"The highest recorded temperature was {max_temps[highest_temp]:.2f}")
 
 #lowest recorded temperature
 lowest_temp = min_temps.index(min(min_temps))
-print(f"The lowest recorded temperature was {min_temps[lowest_temp]}")
+print(f"The lowest recorded temperature was {min_temps[lowest_temp]:.2f}")
