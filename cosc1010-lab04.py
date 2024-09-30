@@ -1,12 +1,10 @@
-# Your Name Here
+# Quinn Kwiatkowski
 # UWYO COSC 1010
-# Submission Date
-# Lab 03 
-# Lab Section: 
-# Sources, people worked with, help given to: 
-# your
-# comments
-# here
+# Submission Date: 10/06/2024
+# Lab 04 
+# Lab Section: 14
+# Sources, people worked with, help given to: None
+# Comments: None
 
 
 
@@ -103,3 +101,24 @@ min_temps = [
 # HINT: You can find this information without using any logic or looping.
 
 
+
+temp_total_max = 0
+temp_total_min = 0
+
+#average maximum temperature
+for i_one in range(len(max_temps)):
+    temp_total_max += max_temps[i_one]
+print(f"The average maximum temperature was {temp_total_max/len(max_temps)}")
+
+#average minimum tempurature
+for i_two in range(len(min_temps)):
+    temp_total_min += min_temps[i_two]
+print(f"The average minimum temperature was {temp_total_min/len(min_temps)}")
+
+#highest recorded temperature
+highest_temp = max_temps.index(max(max_temps))
+print(f"The highest recorded temperature was {max_temps[highest_temp]}")
+
+#lowest recorded temperature
+lowest_temp = min_temps.index(min(min_temps))
+print(f"The lowest recorded temperature was {min_temps[lowest_temp]}")
