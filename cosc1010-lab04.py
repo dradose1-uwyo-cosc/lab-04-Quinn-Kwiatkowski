@@ -102,6 +102,7 @@ min_temps = [
 
 
 
+#variables to index through for the for loops
 temp_total_max = 0
 temp_total_min = 0
 
